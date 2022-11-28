@@ -1,0 +1,115 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %} digital marketing distribution plan{% endblock %}
+{% block content %}
+
+<!-- <div class="context">
+</div>
+<div class="area" >
+      <ul class="circles">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+      </ul>
+</div > -->
+
+<div class="enterTainments_Section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="item text-white w3-animate-right">
+          <h2 class="text-white">Enjoy The Digital Marketing Distribution <br> Packages offer!</h2>
+          <h3>distribute your songs on all digital platform today and get paid</h3>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- pricing tables -->
+<section>
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card1 text-center">
+          <div class="title">
+            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+            <h2>Basic</h2>
+          </div>
+          <div class="price">
+            <h1>50000 Tsh/=</h1>
+          </div>
+          <div class="option">
+            <ul>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Free account opening </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 20 <sup>+</sup> followers </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 100 streams </li>
+            <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+            </ul>
+          </div>
+          <a href="{% url 'subscriber:digitalMarketingDistributionBasicPackage' %}" class="
+          text-decoration-none">Order Now </a>
+          
+        </div>
+      </div>
+      <!-- END Col one -->
+      <div class="col-sm-4">
+        <div class="card1 text-center">
+          <div class="title">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <h2>Standard</h2>
+          </div>
+          <div class="price">
+            <h1>100000 Tsh/=</h1>
+          </div>
+          <div class="option">
+            <ul>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> Free account opening </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 40 <sup>+</sup> followers </li>
+            <li> <i class="fa fa-check" aria-hidden="true"></i> 150 streams </li>
+            <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+              </ul>
+          </div>
+          <a href="{% url 'subscriber:digitalMarketingDistributionStandardPackage' %}" class="
+          text-decoration-none">Order Now </a>
+        </div>
+      </div>
+      <!-- END Col two -->
+      <div class="col-sm-4">
+        <div class="card1 text-center">
+          <div class="title">
+            <i class="fa fa-rocket" aria-hidden="true"></i>
+            <h2>Premium</h2>
+          </div>
+          <div class="price">
+            <h1>250000 Tsh/=</h1>
+          </div>
+          <div class="option">
+            <ul>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> Free account opening </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 80 <sup>+</sup> followers </li>
+              <li> <i class="fa fa-check" aria-hidden="true"></i> 500 streams </li>
+              <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+              </ul>
+          </div>
+          <a href="{% url 'subscriber:digitalMarketingDistributionPremiumPackage' %}" class="
+          text-decoration-none">Order Now </a>
+        </div>
+      </div>
+      <!-- END Col three -->
+    </div>
+  </div>
+</div>
+</section>
+<!-- end of pricing tables -->
+<!-- Button trigger modal -->
+
+{% endblock %}

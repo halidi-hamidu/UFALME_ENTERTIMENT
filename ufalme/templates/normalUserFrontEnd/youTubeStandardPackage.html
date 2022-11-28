@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+{% load static %}
+{% block title %} form{% endblock %}
+{% block content %}
+<div class="form_section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="back_button_section">
+                  <a href="{% url 'subscriber:youtubePackage' %}" >Back to plan</a>
+                </div>
+                <div class="image_section">
+                  <img src="{% static 'asset/images/youtubeStandardPackage.jpg' %}" alt="package1" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="header">
+                  <h4><strong>Please fill this form correctly.</strong></h4>
+                </div>
+                <div class="form-group">
+                  <form action="" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="package_name" id="" placeholder="Your first name" class="form-control"  value="youTubeStandardPackage" style="display:none">
+                    {% include './form.html' %}
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
